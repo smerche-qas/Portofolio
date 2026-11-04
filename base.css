@@ -1,0 +1,236 @@
+.footer{
+    font-family: "Courier New", Courier, monospace;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+body{
+    background-color: black;
+    padding: 2px;
+    overflow: hidden;
+}
+
+body::before{
+    content: "";
+    position: fixed;
+    inset: -4px;
+    z-index: -1;
+    background-image: linear-gradient(to bottom, transparent, rgba(255, 0, 0, 0.45)), url("media/bg.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    filter: blur(2px);
+    opacity: 0.65;
+}
+
+.maincontainer{
+    display: flex;
+    padding: 20px;
+    height: auto;
+    width: auto;
+    border: white 1px solid;
+    
+}
+
+.shortBioContainer{
+    display: inline-block;
+    padding: 20px;
+    height: auto;
+    max-width: 370px;
+}
+
+.shortBio{
+    display: inline-block;
+    padding: 20px;
+    height: auto;
+    max-width: 300px;
+    border: white 1px solid;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.048);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.123), rgba(0, 0, 0, 0.008)), url("media/gridbg.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 820px 820px;
+    box-shadow: 0px 0px 10px 2px #83838380;
+}
+
+.more{
+    display: flex;
+    padding: 20px;
+    height: auto;
+    width: 100%;
+    border: white 1px solid;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px 2px #83838380;
+}
+
+.moreList{
+    display: block;
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+    border-right: white 1px solid;
+}
+.moreListItem{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    margin-right: 10px;
+    font-family: IBMPlexMono-Bold;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.moreListItem:hover{
+    background-color: white;
+    color: black;
+}
+
+.listContents{
+    display: block;
+    width: 100%;
+    max-height: 600px;
+    padding: 0 30px 0 30px;
+    border-radius: 4px;
+    border: white 1px solid;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.5)), url("media/gridbg.png");
+    background-position: 625px 10px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 820px 820px;
+    text-shadow: #ffffff1a 2px 0px 4px, #ffffff2d 0px 2px 4px, #ffffff2d 2px 1px 4px, #ffffff2d 1px 2px 4px, #ff0000 0px 0px 7px;
+    box-shadow: 0px 0px 10px 2px #83838380;
+}
+
+.info{ 
+    font-family: "Courier New", Courier, monospace;
+    color: white;
+}
+
+.label{
+    font-family: Saira Stencil One;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.infoDetail{
+    font-family: "ShareTech Mono", monospace;
+    color: white;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.quote{
+    font-family: "ShareTech Mono", monospace;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+}
+
+.contentPage{
+    display: none;
+    color: white;
+    font-family: IBMPlexMono-Bold;
+}
+
+#education{
+    display: block;
+    color: white;
+    font-family: IBMPlexMono-Bold;
+}
+#skills{
+    display: none;
+    color: white;
+    font-family: IBMPlexMono-Bold;
+}
+#projects{
+    display: none;
+    color: white;
+    font-family: IBMPlexMono-Bold;
+}
+#misc{
+    display: none;
+    color: white;
+    font-family: IBMPlexMono-Bold;
+}
+
+.pfpIcon{
+    border-radius: 4px;
+    filter: drop-shadow(0px 0px 9px #b80404fc);
+}
+
+.socials{
+    gap: 10px;
+    display: flex;
+}
+
+/* Fonts */
+@font-face {
+  font-family: Saira Stencil One;
+  src: url("fonts/SairaStencil-VariableFont_wdth,wght.ttf");
+}
+
+@font-face {
+  font-family: ShareTech Mono;
+  src: url("fonts/ShareTechMono-Regular.ttf");
+}
+
+@font-face {
+  font-family: IBMPlexMono-Regular;
+  src: url("fonts/IBMPlexMono-Regular.ttf");
+}
+
+@font-face {
+  font-family: IBMPlexMono-Medium;
+  src: url("fonts/IBMPlexMono-Medium.ttf");
+}
+
+@font-face {
+  font-family: IBMPlexMono-MediumItalic;
+  src: url("fonts/IBMPlexMono-MediumItalic.ttf");
+}
+
+@font-face {
+  font-family: IBMPlexMono-Light;
+  src: url("fonts/IBMPlexMono-Light.ttf");
+}
+
+@font-face {
+  font-family: IBMPlexMono-Thin;
+  src: url("fonts/IBMPlexMono-Thin.ttf");
+}
+
+@font-face {
+  font-family: IBMPlexMono-Bold;
+  src: url("fonts/IBMPlexMono-Bold.ttf");
+}
+
+@font-face {
+  font-family: IBMPlexMono-ExtraThin;
+  src: url("fonts/IBMPlexMono-ExtraThin.ttf");
+}
+
+@font-face {
+  font-family: IBMPlexMono-SemiBold;
+  src: url("fonts/IBMPlexMono-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: IBMPlexMono-ExtraLight;
+  src: url("fonts/IBMPlexMono-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: IBMPlexMono-ExtraLightItalic;
+  src: url("fonts/IBMPlexMono-ExtraLightItalic.ttf");
+}
+
+@font-face {
+  font-family: IBMPlexMono-SemiBoldItalic;
+  src: url("fonts/IBMPlexMono-SemiBoldItalic.ttf");
+}

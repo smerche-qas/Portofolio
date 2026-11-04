@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="base.css" />
+    <title>My Site</title>
+  </head>
+  <body>
+    <div class="maincontainer">
+      <section class="shortBioContainer">
+        <div class="shortBio">
+          <div class="PFP">
+            <img src="media/smed.png" alt="Profile" class="pfpIcon" width="300px" height="300px">
+          </div>
+          <div class="info">
+            <p><b><span class="label">Name</span></b>     : <span class="infoDetail">Andrew K</span></p>
+            <p><b><span class="label">Age</span></b>      : <span class="infoDetail">16</span></p>
+            <p><b><span class="label">Location</span></b> : <span class="infoDetail">Bekasi, West Java, Indonesia</span></p>
+          </div>
+        </div>
+        <div class="quote">
+          <p>"Peace comes after conquest; The mountain moved, and the structure built."</p>
+        </div>
+        <div class="socials">
+          <a href="https://x.com/smerche_">
+            <img src="media/x.png" alt="X" class="socialsIcon" width="50px" height="40px"/>
+          </a>
+          <a href="https://www.instagram.com/sme._q_.414/">
+            <img src="media/instagram.png" alt="Instagram" class="socialsIcon" width="42px" height="40px"/>
+          </a>
+          <a href="">
+            <img src="media/linkedin.png" alt="Linkedin" class="socialsIcon" width="42px" height="40px"/>
+          </a>
+          <a href="https://www.youtube.com/@pufferios">
+            <img src="media/youtube.png" alt="Youtube" class="socialsIcon" width="55px" height="40px"/>
+          </a>
+          <a href="https://github.com/smerche-qas">
+            <img src="media/github.png" alt="GitHub" class="socialsIcon" width="40px" height="40px"/>
+          </a>
+        </div>
+      </section>
+      <section class="more">
+        <div class="moreList">
+          <a href="#education" class="moreListItem" onclick="showContent('education');return false;">▶ Education</a>
+          <br>
+          <a href="#skills" class="moreListItem" onclick="showContent('skills');return false;">▶ Skills</a>
+          <br>
+          <a href="#projects" class="moreListItem" onclick="showContent('projects');return false;">▶ Projects</a>
+          <br>
+          <a href="#misc" class="moreListItem" onclick="showContent('misc');return false;">▶ Misc</a>
+          <br>
+        </div>
+        <div class="listContents">
+          <div id="education" class="contentPage">
+            <h1 class="highlight">2016-2022</h1>
+            <p>Primary Grade</p>
+            <p>
+              <strong>School:</strong> Royal Wells School<br>
+              <strong>Location:</strong> Bekasi City, West Java<br>
+              <strong>Description:</strong> Completed primary education with a focus on English, Computers, and Sciences. This was also the time when i excelled in swimming.<br>
+            </p>
+            <h1 class="highlight">2023-2026</h1>
+            <p>Secondary Grade</p>
+            <p>
+              <strong>School:</strong> Marsudirini Junior High School<br>
+              <strong>Location:</strong> Bekasi City, West Java<br>
+              <strong>Description:</strong> Completed secondary education with a focus on English, Computers, Arts, Literature, and Sciences. I partook in extracurricular activities including Badminton and a Science Club.<br>
+            </p>
+            <p>
+              <strong>School:</strong> SMK Telkom Jakarta Vocational School<br>
+              <strong>Location:</strong> West Jakarta, DKI Jakarta<br>
+              <strong>Description:</strong> Currently enrolling and studying at Telkom, trying to further excel in the field of software, web or game development, and programming languages. Currently active in extracurricular classes like Badminton and English Club as a member of the marketing team.<br>
+            </p>
+          </div>
+
+          <div id="skills" class="contentPage">
+            <p class="highlight">Skills information goes here.</p>
+          </div>
+
+          <div id="projects" class="contentPage">
+            <p class="highlight">Projects information goes here.</p>
+          </div>
+
+          <div id="misc" class="contentPage">
+            <p class="highlight">Miscellaneous information goes here.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <h4 class="footer">© 2024 Andrew K</h4>
+
+    <!-- loading javascript -->
+    <script src="ContentLoader.js"></script>
+  </body>
+</html>
