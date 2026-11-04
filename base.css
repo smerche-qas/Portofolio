@@ -96,12 +96,6 @@ body::before{
     border-radius: 4px;
     border: white 1px solid;
     overflow-y: auto;
-    background-color: rgba(0, 0, 0, 0.2);
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.5)), url("media/gridbg.png");
-    background-position: 625px 10px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 820px 820px;
     text-shadow: #ffffff1a 2px 0px 4px, #ffffff2d 0px 2px 4px, #ffffff2d 2px 1px 4px, #ffffff2d 1px 2px 4px, #ff0000 0px 0px 7px;
     box-shadow: 0px 0px 10px 2px #83838380;
 }
