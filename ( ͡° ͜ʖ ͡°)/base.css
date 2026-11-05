@@ -88,6 +88,14 @@ body::before{
     color: black;
 }
 
+strong{
+    font-size: 19px;
+    background-color: #fd0606;
+    color: white;
+    border-radius: 4px;
+    padding: 2px 4px 2px 4px;
+}
+
 .listContents{
     display: block;
     width: 100%;
@@ -96,20 +104,23 @@ body::before{
     border-radius: 4px;
     border: white 1px solid;
     overflow-y: auto;
-    text-shadow: #ffffff1a 2px 0px 4px, #ffffff2d 0px 2px 4px, #ffffff2d 2px 1px 4px, #ffffff2d 1px 2px 4px, #ff0000 0px 0px 7px;
+    text-shadow: #fffffffa 2px 0px 4px;
     box-shadow: 0px 0px 10px 2px #83838380;
+}
+
+.listContents.galleryPortal{
+    color: black;
+    text-shadow: #0000001a 0px 0px 0px;
+}
+
+.listContents.label{
+    font-family: IBMPlexMono-Regular;
+    color: white;
 }
 
 .info{ 
     font-family: "Courier New", Courier, monospace;
     color: white;
-}
-
-.label{
-    font-family: Saira Stencil One;
-    color: white;
-    font-weight: bold;
-    font-size: 14px;
 }
 
 .infoDetail{
@@ -137,16 +148,52 @@ body::before{
     color: white;
     font-family: IBMPlexMono-Bold;
 }
+
 #skills{
     display: none;
     color: white;
     font-family: IBMPlexMono-Bold;
 }
+
+.skillsList{
+    display: inline-block;
+    padding: 10px;
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    border: white 1px solid;
+    border-radius: 4px;
+    color: white;
+    font-family: IBMPlexMono-Bold;
+}
+
+.skillsExample{
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px 2px #83838380;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skillsExample:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px 4px #83838380;
+}
+
+.skillsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
 #projects{
     display: none;
     color: white;
     font-family: IBMPlexMono-Bold;
 }
+
 #misc{
     display: none;
     color: white;
@@ -161,6 +208,26 @@ body::before{
 .socials{
     gap: 10px;
     display: flex;
+}
+
+.galleryPortal{
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    background-color: white;
+    font-family: EagleLake-Regular;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    border-radius: 22px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.galleryPortal:hover{
+    background-color: #4b3320;
+    color: #ffffff;
+    
 }
 
 /* Fonts */
@@ -227,4 +294,9 @@ body::before{
 @font-face {
   font-family: IBMPlexMono-SemiBoldItalic;
   src: url("fonts/IBMPlexMono-SemiBoldItalic.ttf");
+}
+
+@font-face {
+  font-family: EagleLake-Regular;
+  src: url("fonts/EagleLake-Regular.ttf");
 }

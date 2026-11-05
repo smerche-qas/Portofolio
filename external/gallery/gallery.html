@@ -1,0 +1,129 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Gallery</title>
+        <!-- FAVICON (optional): a tiny cropped square of one of your drawings, saved as favicon.png -->
+        <link rel="icon" href="media/favicon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,600;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="gallery.css">
+    </head>
+    <body>
+
+        <header class="bar">
+        <!-- Change "index.html" if your main page has a different filename -->
+        <a href="../../( ͡° ͜ʖ ͡°)/index.html">&larr; Back to portfolio</a>
+        <span>Drawings &amp; illustrations</span>
+        </header>
+
+        <section class="opening">
+        <h1>Selected <i>works</i></h1>
+        <p>
+            <!-- WRITE: one or two sentences about your art. What you draw, what you care about while drawing. -->
+            A collection of drawings, illustrations, and models gathered in one quiet room.
+        </p>
+        </section>
+
+        <!-- Filters: the data-filter value must match a piece's data-cat below. Rename or add freely. -->
+        <nav class="filters" aria-label="Filter artworks">
+        <button data-filter="all" aria-pressed="true">All</button>
+        <button data-filter="character" aria-pressed="false">Characters</button>
+        <button data-filter="sketch" aria-pressed="false">Landscapes</button>
+        <button data-filter="digital" aria-pressed="false">Digital</button>
+        </nav>
+
+        <main class="gallery" id="gallery">
+
+        <!--
+            REMINDER FOR CREATOR WHEN ADDING A PIECE: copy one whole <figure class="piece"> block and paste it below the last one.
+            1. Put your file in an "images" folder next to this page and set the src.
+            2. Set data-cat to a filter name above (character / sketch / digital).
+            3. --ratio is the shape of the placeholder (width / height). It only matters until the image loads.
+            4. Fill in the title, year and medium. Delete the medium if you don't want it.
+            Tip: export images around 1600px on the long side, as .jpg or .webp, so the page loads fast.
+        -->
+
+        <figure class="piece" data-cat="character">
+            <button class="frame" type="button">
+            <span class="mat"><span class="art" style="--ratio: 3 / 4">
+                <!-- IMAGE 1. -->
+                <img src="media/ceylon_promotionpp.png" alt="Short description of this artwork">
+            </span></span>
+            </button>
+            <figcaption><h2>Ceylon</h2><p>2026 &middot; Digital</p></figcaption>
+        </figure>
+
+        <figure class="piece" data-cat="character">
+            <button class="frame" type="button">
+            <span class="mat"><span class="art" style="--ratio: 1 / 1">
+                <!-- IMAGE 2. -->
+                <img src="media/meloni.png" alt="Short description of this artwork">
+            </span></span>
+            </button>
+            <figcaption><h2>Meloni</h2><p>2026 &middot; Digital</p></figcaption>
+        </figure>
+
+        <figure class="piece" data-cat="character">
+            <button class="frame" type="button">
+            <span class="mat"><span class="art" style="--ratio: 4 / 3">
+                <!-- IMAGE 3. -->
+                <img src="media/lawrencelorraine_versaillesbg.png" alt="Short description of this artwork">
+            </span></span>
+            </button>
+            <figcaption><h2>Lawrence Lorraine - Metal Waltz</h2><p>2026 &middot; Digital</p></figcaption>
+        </figure>
+
+        <figure class="piece" data-cat="character">
+            <button class="frame" type="button">
+            <span class="mat"><span class="art" style="--ratio: 4 / 5">
+                <!-- IMAGE 4. -->
+                <img src="media/ceylon2.png" alt="Short description of this artwork">
+            </span></span>
+            </button>
+            <figcaption><h2>Ceylon</h2><p>2026 &middot; Digital</p></figcaption>
+        </figure>
+
+        <figure class="piece" data-cat="sketch">
+            <button class="frame" type="button">
+            <span class="mat"><span class="art" style="--ratio: 3 / 4">
+                <!-- IMAGE 5. -->
+                <img src="media/artwork-05.jpg" alt="Short description of this artwork">
+            </span></span>
+            </button>
+            <figcaption><h2>N/A</h2><p>TBD &middot; TBD</p></figcaption>
+        </figure>
+
+        <figure class="piece" data-cat="digital">
+            <button class="frame" type="button">
+            <span class="mat"><span class="art" style="--ratio: 1 / 1">
+                <!-- IMAGE 6: anything you're proud of. -->
+                <img src="media/ceylonecmascot.png" alt="Short description of this artwork">
+            </span></span>
+            </button>
+            <figcaption><h2>Ceylon Character Reference Card</h2><p>2026 &middot; Digital</p></figcaption>
+        </figure>
+
+        </main>
+
+        <section class="note">
+        <h2>About the work</h2>
+        <p>
+            <!-- WRITE: a short artist's statement (3 to 4 sentences), in your own voice. Tools, influences, what you're working on next. -->
+            Although i don't possess a tablet or pen, i make do with what i have and use my trusty ol' mouse while benefiting from traditional hand-drawn techniques and other popular illustrating/sketching tools and methods. Disclaimer.. I draw what i want.
+        </p>
+        </section>
+
+        <!-- Lightbox: opens when you click a piece. Arrow keys move between pieces, Esc closes. -->
+        <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Artwork viewer">
+        <button class="lb-btn lb-close" aria-label="Close">&times;</button>
+        <button class="lb-btn lb-prev" aria-label="Previous artwork">&lsaquo;</button>
+        <img id="lb-img" alt="">
+        <div class="cap"><h3 id="lb-title"></h3><p id="lb-meta"></p></div>
+        <button class="lb-btn lb-next" aria-label="Next artwork">&rsaquo;</button>
+        </div>
+
+        <script src="gallery.js"></script>
+    </body>
+</html>
